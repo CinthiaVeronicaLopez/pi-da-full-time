@@ -6,3 +6,5 @@ scipy
 scikit-learn
 psycopg2
 sqlalchemy
+regex
+datetime

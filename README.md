@@ -28,9 +28,9 @@ La información se centra en vuelos que han sufrido un siniestro a lo largo de t
 
 Con estos datos analizaremos las características de vuelos siniestrados a los efectos de analizar los siguientes KPI's propuestos:
 
-🚀Evaluar la disminución del 10% en la tasa de fatalidad de la tripulación en los últimos 10 años, en comparación con la década anterior.
+🚀Evaluar la disminución del 10% en la tasa de fatalidad de la tripulación en los últimos 10 años(Suma total de fallecidos en el período de tiempo / Suma total de accidentes en el período de tiempo), en comparación con la década anterior.
 
-🚀
+🚀Estimar el Aumento en la tasa anual de supervivencia (personas sobrevivientes / personas a bordo) para aerolíneas con gran cantidad de accidentes históricos.
 
 
 ## ***Analisis exploratorio de datos***
@@ -40,13 +40,26 @@ A los efectos de poder entender los datos presentados, se realizaron una serie d
 
 **Análisis de accidentes, tasa de mortalidad, tasa de supervivencia y seguridad en vuelos por: país y aerolínea;
 
+**Distribuciones de frecuencias y estadísticas de las variables numéricas;
+
+**Identificación de variables categóricas y sus valores;
+Análisis de accidentes por: país, aerolínea, aeronave y categoría de vuelo;
+
+**Análisis temporales por año
 ## ***Exportacion a base de datos***
 
-Una vez finalizadas las transformaciones necesarias sobre el archivo csv, se procedió a ingestar el dataframe resultante en una base de datos a través de python estableciendo la conexión correspondiente con la librería.
+Una vez finalizadas las transformaciones necesarias sobre el archivo csv, se procedió a ingestar el dataframe resultante en una base de datos postgresql a través de python estableciendo la conexión correspondiente con la librería.
 
-## ***Importacion a Power BI y Modelado de Datos***
 ## ***Dashboard***
+Se presentarán visualizaciones que permitirán analizar la distribución de los accidentes aéreos a lo largo del tiempo. Esto será de gran ayuda para identificar patrones, tendencias y cambios en la frecuencia de los accidentes. Algunas de las problemáticas a desarrollar y las posibles soluciones podrían incluir:
 
+Identificación de áreas de mayor riesgo: Mediante la visualización de los accidentes en un mapa geográfico, se podrán identificar las áreas con mayor concentración de accidentes. Esto permitirá tomar medidas preventivas y mejorar la seguridad en esas zonas.
+
+Análisis de factores contribuyentes: Al analizar los accidentes en función de diferentes variables, como el tipo de aeronave, se podrán identificar los factores que contribuyen a la ocurrencia de accidentes. Esto permitirá implementar medidas correctivas y mejorar los protocolos de seguridad.
+
+Seguimiento de tendencias: Al visualizar la evolución de los accidentes a lo largo del tiempo, se podrán identificar tendencias y cambios en la frecuencia de los accidentes. Esto permitirá evaluar la efectividad de las medidas implementadas y realizar ajustes en los protocolos de seguridad.
+
+Comparación de categorías de accidentes: Mediante la visualización de los accidentes según su categoría, como accidentes no militar o militares,y se podrán identificar diferencias en la frecuencia y gravedad de los accidentes. Esto permitirá enfocar los esfuerzos de mejora en las áreas más críticas.
 ## Fuente de datos
 **Obligatorio:**
 
